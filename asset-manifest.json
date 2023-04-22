@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/luisportfolio/static/css/main.616d9325.css",
+    "main.js": "/luisportfolio/static/js/main.9253d4f2.js",
+    "static/media/avatar.png": "/luisportfolio/static/media/avatar.4958ae5828ab91a7b7cc.png",
+    "static/media/photo2.jpg": "/luisportfolio/static/media/photo2.725eeb4f323fd4253a97.jpg",
+    "static/media/photo1.jpg": "/luisportfolio/static/media/photo1.b0a3698a4077d16cc076.jpg",
+    "static/media/photo4.jpg": "/luisportfolio/static/media/photo4.b8661d31f3d58e4af20e.jpg",
+    "static/media/photo3.jpg": "/luisportfolio/static/media/photo3.cd2db4634872da6b1504.jpg",
+    "static/media/about.jpg": "/luisportfolio/static/media/about.4d3a4ab6058530c08012.jpg",
+    "static/media/Grotesk.otf": "/luisportfolio/static/media/Grotesk.4db67c96ba092cd0ad09.otf",
+    "index.html": "/luisportfolio/index.html",
+    "main.616d9325.css.map": "/luisportfolio/static/css/main.616d9325.css.map",
+    "main.9253d4f2.js.map": "/luisportfolio/static/js/main.9253d4f2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.616d9325.css",
+    "static/js/main.9253d4f2.js"
+  ]
+}
