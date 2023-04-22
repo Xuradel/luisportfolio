@@ -1,38 +1,674 @@
-.App {
-  text-align: center;
+@font-face{
+  font-family: "grotesk";
+  src: url(./fonts/Grotesk.otf) format("truetype");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a{
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.grid{
+  display:grid;
+  width: 100vw;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-around;
+}
+
+.flexFooter{
+  display: flex;
+  justify-content: space-around;
+  
+}
+.main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80vh;
+  background-color: #2A4364;
+  
+}
+
+.skills{
+
+  background-color: #2A4364;
+}
+
+.projects{
+  background-color: #2A4364;
+}
+.footer{
+  width: 100vw;
+}
+.article{
+  justify-content: space-between;
+}
+
+.flexAbout{
+  display: flex;
+  flex-direction: column;
+}
+
+.flexSkills{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.flexServices{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  font-family: "grotesk";
+  
+}
+
+.flexProjects{
+  box-sizing: border-box;
+}
+
+.flexContact{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-family: "grotesk";
+  width: 100vw;
+  height: auto;
+
+}
+
+.projectContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: "grotesk";
+  margin-bottom: 2rem;
+  width: 100vw;
+}
+
+/* Header CSS */
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1.3rem 3rem;
+  background: #18181A;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.4px);
+  -webkit-backdrop-filter: blur(2.4px);
+}
+
+#nav-title {
+  margin-right: auto;
+  font-size: 1.5em;
+  color:white;
+  font-family: "grotesk";
+  font-size: 2rem;
+}
+
+#nav-title-mobile {
+  margin-right: auto;
+  font-size: 1em;
+  color: white;
+  font-family: "grotesk";
+}
+
+.navbar li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 1.3rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+  color: white;
+  font-family: "grotesk";
+  font-size: 2rem;
+}
+
+.navbar a:hover {
+  color: #D9B311
+}
+
+.hamburger{
+  display: block;
+  cursor: pointer;
+}
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+.hamburger.active .bar:nth-child(2){ 
+  opacity: 0;
+}
+.hamburger.active .bar:nth-child(1){ 
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg); 
+} 
+
+.nav-menu{
+  display: flex;
+  position: fixed;
+  left: -115%;
+  top: 3.90rem;
+  gap: 0;
+  flex-direction: column;
+  width: 100%;
+  text-align:center;
+  transition: 0.3s;
+  background: #18181A;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.nav-item{
+  margin: 16px 0;
+}
+
+.nav-menu.active{
+  left: -10%;
+}
+
+.nav-link.hover{
+  color: #D9B311
+}
+
+
+
+
+/* LandingSection CSS */
+
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.avatar{
+  min-width: 15rem;
+  max-width: 17em;
+  background:#ffffff;
+  border-radius: 50%;
+
+}
+
+.text h1, p{
+  align-self: center;
+  font-family: "grotesk";
+  margin-top: 1rem;
+}
+
+.greeting{
+  color:white;
+  font-size: 3rem;
+}
+.name{
+  color: #D9B311;
+}
+
+.bio{
+  color: white;
+  font-size: 2rem;
+  overflow-wrap: break-word;
+
+}
+
+.gold{
+  color: #D9B311;
+}
+
+
+
+@media only screen and (max-width: 1080px) {
+  .greeting{
+    color:white;
+    font-size: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .name{
+    color: #D9B311;
+  }
+  
+  .bio{
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  
+  .gold{
+    color: #D9B311;
+  }
+
+  .text{
+    overflow-wrap: break-word;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  .avatar{
+    margin: 1rem;
+    align-self: center;
+    min-width: 35%;
+  }
+
+  .container{
+    flex-direction: column-reverse;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    gap: 2rem;
+    
+  }
+  .main{
+    height: 100vh;
+  }
+
+  .flexContact{
+    height: 100vh;
+    align-content: center;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* About me CSS */
+
+.AboutContainer{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.AboutContainerMobile{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  
+}
+
+.About1{
+  align-self: center;
+  font-size: 3rem;
+  font-family: "grotesk";
+  margin: 2rem 0 2rem 0;
+}
+
+.About2{
+  color: #D9B311;
+}
+
+.AboutBio{
+  font-size: 1.5rem;
+  align-self: center;
+  padding-bottom: 5rem;
+}
+
+.AboutTextPC{
+  min-width: 60rem;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin: 0 4rem 0 4rem;
+  align-self:center;
+  text-align:justify;
+  font-family: "grotesk";
+}
+
+.AboutTextMobile{
+  min-width: 18rem;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  text-align: justify;
+  font-family: "grotesk";
+  margin: 1rem 2rem 1rem 2rem;
+
+}
+.AboutImage{
+  min-width: 25rem;
+  max-width: 28rem;
+  height: auto;
+  margin-bottom: 5rem;
+  border: 1px solid #ccc;
+
+}
+
+.AboutImageMobile{
+  min-width: 15rem;
+  height: auto;
+  padding: 0 2rem 0 2rem;
+
+}
+
+/* Skills CSS */
+
+.container {
+  width: 90%;
+  margin: 2rem auto;
+}
+.heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: "grotesk";
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-flow: wrap;
+  gap: 5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.card {
+  width: 20rem;
+  background: #fff;
+  border: 1px solid #ccc;
+  margin-bottom: 3rem;
+  transition: 0.3s;
+}
+
+.card-header {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #40679a;
+  color: #fff;
+}
+
+.card-body {
+  padding: 3rem 2rem;
+  text-align: center;
+  font-size: 18px;
+}
+
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 4rem -1rem rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 1080px) {
+  .card {
+    width: 40%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (max-width: 1080px) {
+  .container {
+    width: 100%;
   }
+
+  .heading {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .card {
+    width: 20rem;
+  }
+
+}
+
+/* Services Section CSS */
+
+.serviceLogo{
+  width: 3rem;
+}
+
+.serviceTitle{
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+
+.servicesContainer{
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  flex-direction: row;
+  justify-content: center;
+  margin: 2rem 0 5rem 0;
+}
+
+.servicesContainer .serviceCard{
+  position: relative;
+  cursor: pointer;
+  
+}
+
+.servicesContainer .serviceCard .face{
+  max-width: 23rem;
+  height: 12.5rem;
+  transition: 0.5s;
+  
+}
+
+.servicesContainer .serviceCard .face.face1{
+  position: relative;
+  background: #2A4364;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  
+}
+
+.servicesContainer .serviceCard:hover .face.face1{
+  background: #40679a;
+}
+
+
+.servicesContainer .serviceCard .face.face1 .content h3{
+  margin: 10px 0 0;
+  padding: 0;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  
+}
+
+.servicesContainer .serviceCard .face.face2{
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+  
+}
+
+.servicesContainer .serviceCard:hover .face.face2{
+  transform: translateY(0);
+  
+}
+
+.servicesContainer .serviceCard .face.face2 .content p{
+  margin: 0;
+  padding: 0;
+  
+}
+
+.servicesContainer .serviceCard .face.face2 .content a{
+  margin: 15px 0 0;
+  display:  inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: #333;
+  padding: 5px;
+  border: 1px solid #333;
+}
+
+.servicesContainer .serviceCard .face.face2 .content a:hover{
+  background: #333;
+  color: #fff;
+}
+
+/* Projects Section CSS */
+
+.projectGrid { 
+  display: flex;
+  width: 100%;
+  grid-gap: 6rem;
+  font-family: 'grotesk';
+  flex-wrap: wrap;
+  justify-content: center;
+ }
+
+ .projectTitle{
+  font-size: 3rem;
+  margin: 4rem 0 4rem 0;
+ }
+
+ .projectGridItem {                      
+  background-color: #fff;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem ☐rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s;   
+  width: 30rem;
+  height: auto;     
+  margin: 0 4rem 0 4rem;                                                                                                                             
+ }                                                                                                                                           
+
+ .projectGridItem:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem Orgba(0, 0, 0, 0.5);
+}
+
+.projectCardImg{
+  display: block;
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.projectCardContent { 
+  padding: 3rem;
+}
+.projectCardHeader {
+ font-size: 2rem;
+ font-weight: 500;
+ color: #0d0d0d;
+ margin-bottom: 1.5rem;
+}
+
+.projectCardText{
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  color:black;
+  margin-bottom: 2.5rem;
+}
+
+.projectCardButton{
+  display: block; 
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.5rem; 
+  text-align: center;
+  color: #3363ff;
+  background-color: #d8e0fd;
+  border: none;
+  border-radius: 0.4rem;
+  transition: 0.2s;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+}
+
+.projectCardButton span{
+  margin-left: 1rem;
+  transition: 0.2s;
+}
+
+.projectCardButton:hover,
+.projectCardButton:active{
+  background-color:#c2cffc;
+}
+
+.projectCardButton:hover span,
+.projectCardButton:active span{
+  margin-left: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .projectGridItem{
+    width: 20rem;
+    height: auto;     
+    margin: 0 2rem 0 2rem; 
+  }
+}
+
+/* Contact Page CSS */
+
+.formContainer{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0 2rem 0;
+  
+}
+
+.form{
+  width: 60%;
+  height: auto;
+  font-size: 2rem;
+  color: #2A4364;
+
+}
+
+.contactTitle{
+  font-size: 3rem;
+}
+
+.contact-btn{
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.results{
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Footer CSS */
+
+.footerContainer{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 10vh;
+  background-color: #2A4364;
+}
+
+.footerHeading{
+  align-self: center;
+  font-family: "grotesk";
+  font-size: 1.5rem;
+  color: white;
 }
