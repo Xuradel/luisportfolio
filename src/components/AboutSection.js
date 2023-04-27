@@ -6,7 +6,7 @@ function aboutPC() {
         <div className="AboutContainer">
             <h1 className="About1">About<span className="About2"> Me</span></h1>
             <div className="AboutTextPC">
-                <img src={require("../images/about.jpg")} alt="aboutLogo" className="AboutImage"></img>
+                <img src={require("../images/about.png")} alt="aboutLogo" className="AboutImage"></img>
                 <p className="AboutBio">I'm a Front End Developer with passion for building beautiful, creative
                     and user friendly websites, I'm
                     very excited to put my skills to use in a professional setting. <br /><br />
@@ -16,7 +16,6 @@ function aboutPC() {
                     Feel free to contact me.
                 </p>
             </div>
-            
         </div>
     )
 }
@@ -25,9 +24,9 @@ function aboutMobile(){
     return(
         <div className="AboutContainerMobile">
         <h1 className="About1">About<span className="About2"> Me</span></h1>
-        <img src={require("../images/about.jpg")} alt="aboutLogo" className="AboutImageMobile"></img>
+        <img src={require("../images/about.png")} alt="aboutLogo" className="AboutImageMobile"></img>
         <div className="AboutTextMobile">
-            <p className="AboutBio">I'm a Front End Developer with passion for building beautiful, creative
+            <p className="AboutBioMobile">I'm a Front End Developer with passion for building beautiful, creative
                 and user friendly websites, I have a strong understanding of Front End Development and I'm
                 very motivated to put my skills to use in a professional setting. <br /><br />
                 I'm confident that I can be a valuable asset to any

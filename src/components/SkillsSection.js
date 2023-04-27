@@ -3,7 +3,7 @@ import React from 'react'
 const SkillsSection = () => {
     return (
         <div id="skills-section" class="containerCards">
-            <div class="heading">
+            <div class="skillHeading">
                 <h1 className='skillsTitle'><span className='gold'>My</span> Skills</h1>
             </div>
             <div class="row">
@@ -27,7 +27,7 @@ const SkillsSection = () => {
                 <div class="card">
                     <div class="card-header">
                         <img src={require("../images/tools.png")} alt="toolsLogo" className="toolsImage"></img>
-                        <h1 className='skillsHeading'>other</h1>
+                        <h1 className='skillsHeading'>Other</h1>
                     </div>
                     <div class="card-body">
                         <p>

@@ -2,6 +2,18 @@
   font-family: "grotesk";
   src: url(./fonts/Grotesk.otf) format("truetype");
 }
+@font-face {
+  font-family: "poppinsRegular";
+  src: url("./fonts/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "poppinsBold";
+  src: url("./fonts/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: "poppinsLight";
+  src: url("./fonts/Poppins-Light.ttf");
+}
 
 a{
   text-decoration: none;
@@ -9,7 +21,6 @@ a{
 
 .grid{
   display:grid;
-  width: 100vw;
 }
 
 .flex{
@@ -26,10 +37,9 @@ a{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
   height: 80vh;
   background-color: #2A4364;
-  
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%231f3a5a' fill-opacity='0.6'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");  
 }
 
 .skills{
@@ -41,7 +51,6 @@ a{
   background-color: #2A4364;
 }
 .footer{
-  width: 100vw;
 }
 .article{
   justify-content: space-between;
@@ -76,7 +85,6 @@ a{
   justify-content: space-around;
   flex-wrap: wrap;
   font-family: "grotesk";
-  width: 100vw;
   height: auto;
 
 }
@@ -89,7 +97,6 @@ a{
   flex-direction: column;
   font-family: "grotesk";
   margin-bottom: 2rem;
-  width: 100vw;
 }
 
 /* Header CSS */
@@ -135,7 +142,7 @@ a{
 }
 
 .navbar a:hover {
-  color: #D9B311
+  color: #597FFB
 }
 
 .hamburger{
@@ -182,11 +189,11 @@ a{
 }
 
 .nav-menu.active{
-  left: -10%;
+  left: 0%;
 }
 
 .nav-link.hover{
-  color: #D9B311
+  color: #597FFB
 }
 
 
@@ -198,41 +205,46 @@ a{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 5rem;
+  align-items: center;
 }
 
 .avatar{
-  min-width: 15rem;
-  max-width: 17em;
-  background:#ffffff;
-  border-radius: 50%;
-
+  width: 50rem;
+  
 }
-
-.text h1, p{
-  align-self: center;
-  font-family: "grotesk";
-  margin-top: 1rem;
+.gold{
+  color: #597FFB;
 }
-
 .greeting{
+  margin: 0 2rem 0 2rem;
   color:white;
   font-size: 3rem;
+  font-family: "poppinsRegular";
 }
 .name{
-  color: #D9B311;
+  color: #597FFB;
 }
+.greeting2{
+  color:white;
+  font-size: 5rem;
+  font-family: "poppinsBold";
+  margin: 0 2rem 0 2rem;
 
+}
+.name2{
+  color: #597FFB;
+}
+.popBold{
+  font-family: "poppinsBold";
+}
 .bio{
+  margin: 0 2rem 0 2rem;
   color: white;
-  font-size: 2rem;
+  font-size: 2.3rem;
   overflow-wrap: break-word;
-
+  font-family: "poppinsRegular";
 }
 
-.gold{
-  color: #D9B311;
-}
 
 
 
@@ -244,7 +256,13 @@ a{
     margin-right: 2rem;
   }
   .name{
-    color: #D9B311;
+    color: #597FFB;
+  }
+
+  .greeting2{
+    font-size: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
   
   .bio{
@@ -255,7 +273,7 @@ a{
   }
   
   .gold{
-    color: #D9B311;
+    color: #597FFB;
   }
 
   .text{
@@ -263,19 +281,16 @@ a{
     margin-left: 1rem;
     margin-top: 1rem;
     padding-bottom: 2rem;
+
   }
+
   .avatar{
-    margin: 1rem;
-    align-self: center;
-    min-width: 35%;
+    width: 80%;
   }
 
   .container{
-    flex-direction: column-reverse;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    gap: 2rem;
-    
+    gap: 0;
+    flex-direction: column-reverse;    
   }
   .main{
     height: 100vh;
@@ -304,16 +319,17 @@ a{
 
 .About1{
   align-self: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: "grotesk";
   margin: 2rem 0 2rem 0;
 }
 
 .About2{
-  color: #D9B311;
+  color: #597FFB;
 }
 
 .AboutBio{
+  width: 30%;
   font-size: 1.5rem;
   align-self: center;
   padding-bottom: 5rem;
@@ -324,45 +340,67 @@ a{
   height: auto;
   display: flex;
   flex-direction: row;
-  gap: 2rem;
-  margin: 0 4rem 0 4rem;
-  align-self:center;
+  gap: 5rem;
   text-align:justify;
   font-family: "grotesk";
+  justify-content: center;
 }
 
 .AboutTextMobile{
-  min-width: 18rem;
   height: auto;
   display: flex;
   flex-direction: row;
   gap: 2rem;
   text-align: justify;
   font-family: "grotesk";
-  margin: 1rem 2rem 1rem 2rem;
-
+  justify-content: center;
+}
+.AboutBioMobile{
+  width: 70%;
+  font-size: 1.5rem;
+  align-self: center;
+  padding-bottom: 5rem;
 }
 .AboutImage{
   min-width: 25rem;
-  max-width: 28rem;
+  max-width: 30rem;
   height: auto;
   margin-bottom: 5rem;
-  border: 1px solid #ccc;
+  transition: 1s ease;
 
+}
+
+.AboutImage:hover{
+  -webkit-transform: rotateZ(-10deg);
+  -ms-transform: rotateZ(-10deg);
+  transform: rotateZ(-10deg);
+  transition: 1s ease;
+}
+.AboutImageMobile:hover{
+  -webkit-transform: rotateZ(-10deg);
+  -ms-transform: rotateZ(-10deg);
+  transform: rotateZ(-10deg);
+  transition: 1s ease;
 }
 
 .AboutImageMobile{
   min-width: 15rem;
   height: auto;
   padding: 0 2rem 0 2rem;
+  transition: 1s ease;
 
 }
 
 /* Skills CSS */
 
 .container {
-  width: 90%;
   margin: 2rem auto;
+}
+
+.skillsTitle{
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 2rem 0 2rem 0;
 }
 .heading {
   text-align: center;
@@ -436,7 +474,7 @@ a{
 }
 
 .serviceTitle{
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-top: 2rem;
 }
 
@@ -531,7 +569,6 @@ a{
 
 .projectGrid { 
   display: flex;
-  width: 100%;
   grid-gap: 6rem;
   font-family: 'grotesk';
   flex-wrap: wrap;
@@ -539,7 +576,7 @@ a{
  }
 
  .projectTitle{
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin: 4rem 0 4rem 0;
  }
 
@@ -643,7 +680,8 @@ a{
 }
 
 .contactTitle{
-  font-size: 3rem;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .contact-btn{
