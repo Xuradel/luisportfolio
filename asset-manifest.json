@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/luisportfolio/static/css/main.9d94811a.css",
-    "main.js": "/luisportfolio/static/js/main.9a24387d.js",
-    "static/media/photo2.jpg": "/luisportfolio/static/media/photo2.725eeb4f323fd4253a97.jpg",
+    "main.js": "/luisportfolio/static/js/main.4178a566.js",
+    "static/media/vetPage.png": "/luisportfolio/static/media/vetPage.4db982a5be30da08cc2a.png",
     "static/media/about.png": "/luisportfolio/static/media/about.4fd064e80aa3f0ec03a6.png",
     "static/media/avatarF.png": "/luisportfolio/static/media/avatarF.2599b0ef5dfe8dbee69b.png",
     "static/media/photo4.jpg": "/luisportfolio/static/media/photo4.b8661d31f3d58e4af20e.jpg",
@@ -14,10 +14,10 @@
     "static/media/Grotesk.otf": "/luisportfolio/static/media/Grotesk.4db67c96ba092cd0ad09.otf",
     "index.html": "/luisportfolio/index.html",
     "main.9d94811a.css.map": "/luisportfolio/static/css/main.9d94811a.css.map",
-    "main.9a24387d.js.map": "/luisportfolio/static/js/main.9a24387d.js.map"
+    "main.4178a566.js.map": "/luisportfolio/static/js/main.4178a566.js.map"
   },
   "entrypoints": [
     "static/css/main.9d94811a.css",
-    "static/js/main.9a24387d.js"
+    "static/js/main.4178a566.js"
   ]
 }
