@@ -5,7 +5,7 @@ const ProjectsSection = () => {
         <div className="projectGrid">
             <div className="projectGridItem">
                 <div className="projectCard">
-                <img src={require("../images/photo1.jpg")} alt="coffee" className="projectCardImg"></img>
+                <img src={require("../images/lolPage.png")} alt="coffee" className="projectCardImg"></img>
                 <div className="projectCardContent">
                     <h1 className="projectCardHeader">Esports scrims analysis</h1>
                     <p className="projectCardText">Site for our scrim tracker App specialized for the
@@ -18,13 +18,13 @@ const ProjectsSection = () => {
             </div>
             <div className="projectGridItem">
                 <div className="projectCard">
-                <img src={require("../images/photo2.jpg")} alt="restaurant" className="projectCardImg"></img>
+                <img src={require("../images/vetPage.png")} alt="restaurant" className="projectCardImg"></img>
                 <div className="projectCardContent">
-                    <h1 className="projectCardHeader">Little Lemon Restaurant</h1>
-                    <p className="projectCardText">Landing page for the Little Lemon Restaurant, 
-                    made with HTML5, CSS using flexbox, deprecated site, building new one.</p>
+                    <h1 className="projectCardHeader">Veterinary website</h1>
+                    <p className="projectCardText">Website made for a client's veterinary, made with React, hooks,
+                    linking/routing, and web design.</p>
                     <button className="projectCardButton">
-                    <a href="https://xuradel.github.io/lemon/" target="_blank">Live Demo <span>&rarr;</span></a>
+                    <a href="https://xuradel.github.io/clinicasergiobarrantes" target="_blank">Live Demo <span>&rarr;</span></a>
                     </button>
                 </div>
                 </div>

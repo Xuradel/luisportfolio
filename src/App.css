@@ -50,8 +50,7 @@ a{
 .projects{
   background-color: #2A4364;
 }
-.footer{
-}
+
 .article{
   justify-content: space-between;
 }
@@ -209,7 +208,7 @@ a{
 }
 
 .avatar{
-  width: 50rem;
+  width: 30rem;
   
 }
 .gold{
@@ -569,7 +568,7 @@ a{
 
 .projectGrid { 
   display: flex;
-  grid-gap: 6rem;
+  grid-gap: 3rem;
   font-family: 'grotesk';
   flex-wrap: wrap;
   justify-content: center;
@@ -587,9 +586,8 @@ a{
   box-shadow: 0 3rem 6rem ☐rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: 0.2s;   
-  width: 30rem;
+  width: 40rem;
   height: auto;     
-  margin: 0 4rem 0 4rem;                                                                                                                             
  }                                                                                                                                           
 
  .projectGridItem:hover {
